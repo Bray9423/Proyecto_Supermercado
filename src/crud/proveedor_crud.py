@@ -27,9 +27,19 @@ def eliminar_proveedor(id_proveedor, nombre_proveedor):
     return None
 
 
-def get_proveedor(id_proveedor):
+def get_ID(id_proveedor):
     for proveedor in proveedores:
         if proveedor.id_proveedor == id_proveedor:
             return proveedor
 
     return None
+
+
+def get_lista(ids):
+    resultado = []
+
+    for proveedor in proveedores:
+        if proveedor.id_proveedor in ids:
+            resultado.append(proveedor)
+
+    return resultado

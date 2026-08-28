@@ -27,9 +27,19 @@ def eliminar_sucursal(id_sucursal, nombre_sucursal):
     return None
 
 
-def get_sucursal(id_sucursal):
+def get_ID(id_sucursal):
     for sucursal in sucursales:
         if sucursal.id_sucursal == id_sucursal:
             return sucursal
 
     return None
+
+
+def get_lista(ids):
+    resultado = []
+
+    for sucursal in sucursales:
+        if sucursal.id_sucursal in ids:
+            resultado.append(sucursal)
+
+    return resultado
