@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> origin/main
 from src.entities.proveedor import Proveedor
 
 proveedores = []
@@ -18,6 +23,9 @@ def editar_proveedor(id_proveedor, nuevo_nombre, nuevo_telefono, nuevo_correo):
     return None
 
 
+<<<<<<< HEAD
+def eliminar_proveedor(id_proveedor):
+=======
 def eliminar_proveedor(id_proveedor, nombre_proveedor):
     for proveedor in proveedores:
         if proveedor.id_proveedor == id_proveedor or proveedor.nombre == nombre_proveedor:
@@ -28,6 +36,7 @@ def eliminar_proveedor(id_proveedor, nombre_proveedor):
 
 
 def get_ID(id_proveedor):
+>>>>>>> origin/main
     for proveedor in proveedores:
         if proveedor.id_proveedor == id_proveedor:
             return proveedor
@@ -35,6 +44,15 @@ def get_ID(id_proveedor):
     return None
 
 
+<<<<<<< HEAD
+def get_proveedor(id_proveedor):
+    for proveedor in proveedores:
+        if proveedor.id_proveedor == id_proveedor:
+            return proveedor
+
+    return None
+>>>>>>> Stashed changes
+=======
 def get_lista(ids):
     resultado = []
 
@@ -43,3 +61,4 @@ def get_lista(ids):
             resultado.append(proveedor)
 
     return resultado
+>>>>>>> origin/main
