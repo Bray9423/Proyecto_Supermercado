@@ -12,14 +12,14 @@ def editar_producto(id_producto, nuevo_nombre, nuevo_precio):
         if producto.id_producto == id_producto:
             producto.nombre = nuevo_nombre
             producto.precio = nuevo_precio
-            return Producto
+            return producto
         
     return None
 
 
-def eliminar_producto(id_producto, nombre):
+def eliminar_producto(id_producto):
     for producto in productos:
-        if producto.id_producto == id_producto or producto.nombre == nombre:
+        if producto.id_producto == id_producto:
             productos.remove(producto)
             return producto
 

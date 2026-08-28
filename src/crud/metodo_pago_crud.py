@@ -14,9 +14,9 @@ def editar_metodopago(id_metodo_pago, nuevo_nombre, nuevo_tipo):
 
     return None
 
-def eliminar_metodopago(id_metodo_pago, nombre_metodo_pago):
+def eliminar_metodopago(id_metodo_pago):
     for metodo_pago in metodos_pago:
-        if metodo_pago.id_metodo_pago == id_metodo_pago or metodo_pago.nombre_metodo_pago == nombre_metodo_pago:
+        if metodo_pago.id_metodo_pago == id_metodo_pago:
             metodos_pago.remove(metodo_pago)
             return metodo_pago
 
