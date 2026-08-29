@@ -14,7 +14,6 @@ from src.entities.sucursal import Sucursal
 from src.entities.usuario import Usuario
 from src.entities.venta import Venta
 
-
 # ============================================================
 # IMPORTAR CRUD
 # ============================================================
@@ -2049,7 +2048,6 @@ def main():
             print(
                 "\nOpcion invalida."
             )
-
 
 # ============================================================
 # EJECUCION
